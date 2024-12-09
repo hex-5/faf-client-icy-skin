@@ -1,5 +1,5 @@
 # faf-client-icy-skin
-* a skin for the downlords faf client
+* a skin for the downlords faf client (https://github.com/FAForever/downlords-faf-client)
 * put the folder into C:\ProgramData\FAForever\themes
 * add https://whvn.cc/01r3x3 as picture in settings.
 # preview
