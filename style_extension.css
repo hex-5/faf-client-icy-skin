@@ -1,0 +1,709 @@
+/*
+https://whvn.cc/01r3x3
+*/
+.root {
+    -fx-base: rgba(240, 245, 250, 0.95);
+    -fx-control-inner-background: rgba(240, 245, 250, 0.95);
+    -fx-accent: rgba(170, 180, 205, 0.80);
+    -fx-accent2: rgba(140, 150, 190, 0.75);
+    -fx-hover-accent: rgba(150, 160, 170, 0.22);
+    -fx-light-text-color: rgba(50, 60, 70, 1.00);
+    -fx-background: -fx-base;
+    -fx-text-background-color: rgba(50, 60, 70, 1.00);
+    -fx-uninstall-color: #8b0000;
+    -unread: derive(#00ff00, 80%);
+    -good: #4caf50;
+    -warn: #ff9800;
+    -bad: #f44336;
+    -warn-transparent: #ff98001a;
+    AEON_COLOR: #87CEEB;
+    CYBRAN_COLOR: #ED6495;
+    UEF_COLOR: #4682B4;
+    SERAPHIM_COLOR: #C7D9E8;
+    HIGHLIGHT_COLOR: rgba(150, 160, 170, 1.00);
+    SHADOW_COLOR: #1A2F4E99;
+    SCROLLBAR_TRACK_COLOR: transparent;
+    SCROLL_BAR_THUMB_COLOR: derive(-fx-base, 20%);
+    REVIEW_SCORE_5: rgba(135, 206, 235, 0.95);
+    REVIEW_SCORE_4: rgba(100, 149, 237, 0.90);
+    REVIEW_SCORE_3: rgba(70, 130, 180, 0.85);
+    REVIEW_SCORE_2: rgba(108, 126, 163, 0.80);
+    REVIEW_SCORE_1: rgba(86, 179, 250, 0.75);
+    DISCORD_COLOR: #7289da;
+    -divider-color: rgba(170, 180, 205, 0.30);
+    -card-color: rgb(240, 245, 250, 0,91);
+    -dimmer-color: #21212199;
+    -fx-text-color: rgba(50, 60, 70, 1.00);
+    -darkened-color: #6C7EA3;
+    -context-menu-color: -fx-base;
+    -context-menu-border-color: -fx-accent2;
+    -menu-item-label-color: -fx-light-text-color;
+    FRIEND_IN_GAME_NOT_SELECTED_ITEM: rgba(42, 253, 53, 0.1);
+    FRIEND_IN_GAME_SELECTED_ITEM: rgba(42, 253, 53, 0.35);
+}
+.text {
+    -fx-font-smoothing-type: lcd;
+}
+.context-menu {
+    -fx-background-color: -fx-base;
+    -fx-border-color: -context-menu-border-color;
+    -fx-border-width: 1; /* 1px */
+    -fx-border-radius: 2; /* 3px */
+    -fx-background-radius: 2; /* 3px */
+}
+    .context-menu .separator .line {
+        -fx-padding: 0;
+        -fx-border-color: transparent;
+    }
+
+
+.menu-item > .label {
+    -fx-text-fill: -menu-item-label-color;
+}
+
+.secondary {
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+}
+
+.bad {
+    -fx-text-fill: -bad;
+}
+
+.chat-user-item-map-name {
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+    -fx-font-size: 9;
+    -fx-padding: 0.0625em 0 0 0; /* 1 0 0 0 */
+}
+
+.chat-user-list-category > .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+.chat-user-list-category > .user-counter {
+    -fx-font-weight: normal;
+    -fx-font-size: 12;
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+}
+
+.filter-text-field {
+    -fx-text-fill: -fx-light-text-color;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.rating-label {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Source Sans Pro';
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+}
+
+
+.user-info-header-area .label {
+    /** Shouldn't be overridden but color ladder doesn't work well with transparency */
+    -fx-text-fill: -fx-light-text-color;
+}
+
+.user-info-window .tab .icon {
+    /** Shouldn't be overridden but color ladder doesn't work well with transparency */
+    -fx-background-color: -fx-light-text-color;
+}
+
+.heading {
+    -fx-font-size: 28px;
+    -fx-padding: -9 0;
+    -fx-text-fill: -fx-light-text-color;
+    -fx-font-family: 'Source Sans Pro Semibold';
+}
+
+.season-selector .list-view .list-cell {
+    -fx-text-fill: -fx-light-text-color;
+}
+
+.season-selector .list-cell {
+    -fx-text-fill: -fx-light-text-color;
+    -fx-padding: 0 10;
+}
+
+.seasonDate {
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+    -fx-font-family: 'Source Sans Pro Semibold';
+    -fx-font-size: 20px;
+}
+
+.h1-tmm {
+    -fx-font-size: 24px;
+    -fx-padding: -9 0 -9 16;
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+    -fx-font-family: 'Source Sans Pro Semibold';
+}
+
+.name {
+    -fx-font-size: 24px;
+    -fx-font-family: 'Source Sans Pro Semibold';
+    -fx-text-fill: -fx-light-text-color;
+}
+
+
+.player-card-text {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Source Sans Pro';
+    -fx-text-fill: -fx-light-text-color;
+}
+
+
+.close-search-text-button:hover {
+    -fx-background-color: rgba(50, 60, 70, 0.3);
+    -icon-paint: white;
+}
+
+
+.close-search-text-button:pressed {
+    -fx-background-color: rgba(50, 60, 70, 0.6);
+    -icon-paint: white;
+}
+
+.query-filter-selected {
+    -fx-background-color: -fx-accent;
+}
+
+.query-item:focused {
+    -fx-background-color: -fx-light-text-color;
+}
+
+.query-item {
+    -fx-background-color: -fx-light-text-color;
+}
+
+.query-filter .context-menu:focused {
+    -fx-background-color: -fx-background;
+}
+
+.status-bar {
+    -fx-spacing: 5;
+    -fx-background-color: -fx-base;
+    -fx-background-radius: 2;
+    -fx-border-radus: 2;
+    -fx-border-color: -fx-accent;
+}
+
+.status-bar-menu-button {
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+    .status-bar-menu-button:openvertically > .arrow-button > .arrow {
+        -fx-shape: "M0 1 L1 1 L.5 0 Z";
+        -fx-background-color: rgba(50, 60, 70, 0.8);
+    }
+
+.titled-pane > .title {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-color: -fx-box-border;
+    -fx-font-weight: bold;
+}
+
+.titled-pane > *.content {
+    -fx-background-color: transparent;
+}
+
+.chat-channel-users-pane {
+    -fx-background-color: -fx-background;
+    -fx-background: #00000011;
+    -fx-border-width: 0 0 0 0.0625em; /* 0 0 0 1 */
+    -fx-border-color: transparent
+}
+
+.filter-text-field {
+    -fx-text-fill: -fx-hover-accent;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.toggle-button {
+    -fx-background-color: -fx-base;
+    -fx-border-color: transparent;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .toggle-button:hover {
+        -fx-background-color: rgba(240, 245, 250, 0.3);
+        -fx-border-color: -fx-accent2;
+    }
+
+    .toggle-button:selected:hover {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-accent2;
+    }
+
+    .toggle-button:selected {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-text-background-color;
+    }
+
+.button {
+    -fx-background-color: -fx-base;
+    -fx-border-color: transparent;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .button:hover {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-accent2;
+    }
+
+.user-button {
+    -fx-background-color: -fx-base;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-border-color: transparent;
+}
+
+    .user-button:hover {
+        -fx-background-color: -fx-base  ;
+        -fx-border-color: -fx-accent2;
+    }
+
+
+.main-navigation-top {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-accent;
+}
+
+.main-navigation-button {
+    -fx-background-color: transparent;
+    /*-fx-background-color: -fx-base;*/
+    -fx-font-size: 1.2em;
+    -fx-padding: 0.44em 1.0em 0.44em 1.0em;
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0 2 2 2;
+    -fx-background-radius: 0 2 2 2;
+}
+
+    .main-navigation-button:highlighted {
+        -fx-background-color: -fx-accent;
+        -fx-border-color: -fx-base;
+    }
+
+    .main-navigation-button:hover {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-base;
+    }
+
+    .main-navigation-button:selected, .main-navigation-button:focused:selected {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-accent;
+    }
+
+.main-menu-button {
+    -fx-background-color: -darkened-color;
+    -fx-background-radius: 0 2 2 2;
+    -fx-border-radius: 0 2 2 2;
+}
+
+    .main-menu-button:hover {
+        -fx-background-color: -fx-base;
+    }
+
+    .main-menu-button > .label {
+        visibility: hidden;
+        -fx-padding: 0;
+    }
+
+    .main-menu-button > .arrow-button {
+        -fx-padding: 1em;
+        -fx-background: transparent;
+    }
+
+        .main-menu-button > .arrow-button > .arrow {
+            -fx-padding: 0.416667em;
+        }
+
+
+.root:maximized .user-button {
+    -fx-translate-y: 0;
+}
+
+.user-button:hover {
+    -fx-background-color: -fx-hover-base;
+}
+
+.inbox-button, .discord-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.season-selector {
+    -fx-padding: 2;
+    -fx-border-width: 1;
+    -fx-font-size: 18px;
+    -fx-background-color: -fx-accent;
+    -fx-font-family: 'Source Sans Pro Semibold';
+}
+
+.seasonDate {
+    -fx-text-fill: rgba(50, 60, 70, 0.7);
+    -fx-font-family: 'Source Sans Pro Semibold';
+    -fx-font-size: 20px;
+}
+
+.division-selector {
+    -fx-padding: 0;
+    -fx-border-width: 1;
+    -fx-font-size: 18px;
+    -fx-background-color: -fx-accent;
+    -fx-font-family: 'Source Sans Pro Semibold';
+}
+
+.subDivisionTabPane > .tab-header-area {
+    -fx-background-color: transparent;
+    -fx-background: #00000012;
+    -fx-padding: 0 0 0 10;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -fx-accent;
+    -fx-font-size: 18px;
+}
+
+.leaderboardChart .chart-plot-background {
+    -fx-background-color: -fx-accent;
+}
+
+.leaderboardChart {
+    -fx-background-color: -fx-accent;
+    -fx-background: #00000012;
+    -fx-border-color: -fx-accent;
+    chart_color_1: REVIEW_SCORE_1;
+    chart_color_2: REVIEW_SCORE_2;
+    chart_color_3: REVIEW_SCORE_2;
+    chart_color_4: REVIEW_SCORE_2;
+    chart_color_5: REVIEW_SCORE_2;
+}
+
+.score-circle {
+    -fx-fill: transparent;
+    -fx-stroke-width: 2;
+    -fx-stroke: -fx-text-color;
+}
+
+.score {
+    -fx-font-size: 60px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-color;
+}
+
+.search {
+    -fx-background-color: -fx-accent;
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-text-color;
+    -fx-font-family: 'Source Sans Pro';
+}
+
+.player-card {
+    -fx-background-color: -fx-base;
+    -fx-border-color: -fx-accent;
+    -fx-background-radius: 2;
+    -fx-border-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .player-card:leader {
+        -fx-border-color: -fx-accent;
+    }
+
+    .player-card:playing {
+        -fx-border-color: -fx-accent;
+    }
+
+.invite-button {
+    -fx-background-color: rgba(240, 245, 250, 0.3);
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .invite-button:hover {
+        -fx-background-color: rgba(240, 245, 250, 0.3);
+        -fx-border-color: -fx-base;
+    }
+
+.leave-button {
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-border-color: -fx-accent2;
+    -fx-padding: 3 14;
+    -fx-pref-height: 29px;
+}
+
+    .leave-button:hover {
+        -fx-background-color: -fx-accent2;
+    }
+
+
+.toggle-button.queue {
+    -fx-background-color: rgba(240, 245, 250, 0.3);
+    -fx-border-color: -fx-accent2;
+    -fx-padding: 8 5;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .toggle-button.queue:hover {
+        -fx-background-color: rgba(240, 245, 250, 0.3);
+        -fx-border-color: -fx-base;
+    }
+
+    .toggle-button.queue:selected:hover {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-text-background-color;
+    }
+
+    .toggle-button.queue:selected {
+        -fx-background-color: -fx-base;
+    }
+
+.toggle-button.start-search {
+    -fx-background-color: rgba(240, 245, 250, 0.3);
+    -fx-border-color: -fx-accent2;
+    -fx-padding: 8 5;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+}
+
+    .toggle-button.start-search:hover {
+        -fx-background-color: rgba(240, 245, 250, 0.3);
+        -fx-border-color: -fx-base;
+    }
+
+    .toggle-button.start-search:selected:hover {
+        -fx-background-color: -fx-base;
+        -fx-border-color: -fx-text-background-color;
+    }
+
+    .toggle-button.start-search:selected {
+        -fx-background-color: -fx-base;
+    }
+
+.map-pool {
+    -fx-background-color: rgba(240, 245, 250, 0.3);
+    -fx-border-color: -fx-accent2;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-background-color: -fx-accent;
+}
+
+    .map-pool:hover {
+        -fx-background-color: rgba(240, 245, 250, 0.3);
+        -fx-border-color: -fx-base;
+    }
+
+
+.image-dimmer-light {
+    -fx-max-height: 2em;
+    -fx-padding: 0 3 3 3;
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+}
+
+.image-dimmer-light-reversed {
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: transparent;
+}
+
+.image-dimmer {
+    -fx-min-height: 3em;
+    -fx-padding: 0 10 10 10;
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+}
+
+.card.hoverable {
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+}
+
+.card.hoverable:hover .image-dimmer {
+    -fx-min-height: 3em;
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+}
+
+.card.hoverable:hover {
+    -fx-border-color: -fx-accent2;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-background-color: rgba(240, 245, 250, 1.0);
+}
+.emoticons-window {
+    -fx-background-color: rgba(240, 245, 250, 0.6);
+    -fx-border-color: -fx-accent2;
+    -fx-border-width: 1;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+}
+
+.emoticon-view:hover {
+    -fx-background-color: -fx-accent2;
+}
+
+.live-replay-tab .table-row-cell:even {
+    -fx-background: rgba(170, 180, 205, 0.30);
+}
+
+.live-replay-tab .table-row-cell:odd {
+    -fx-background: rgba(140, 150, 190, 0.30);
+}
+
+
+.toggle-button.faction-button:hover * {
+    -fx-background-color: -fx-text-color;
+    -fx-border-color: UEF_COLOR;
+}
+
+.aeon-icon {
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-border-color: UEF_COLOR;
+}
+
+.cybran-icon {
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-border-color: UEF_COLOR;
+}
+
+.uef-icon {
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-border-color: UEF_COLOR;
+}
+
+.seraphim-icon {
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-border-color: UEF_COLOR;
+}
+
+.toggle-button.aeon:selected {
+    -fx-border-color: UEF_COLOR;
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-opacity: 1;
+}
+
+.toggle-button.cybran:selected {
+    -fx-border-color: UEF_COLOR;
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-opacity: 1;
+}
+
+.toggle-button.uef:selected {
+    -fx-border-color: UEF_COLOR;
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-opacity: 1;
+}
+
+.toggle-button.seraphim:selected {
+    -fx-border-color: UEF_COLOR;
+    -fx-background-color: SERAPHIM_COLOR;
+    -fx-opacity: 1;
+}
+
+.toggle-button.faction-button {
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-border-width: 1;
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+    -fx-padding: 6;
+    -fx-border-color: transparent;
+}
+
+    .toggle-button.faction-button:hover * {
+        -fx-border-color: UEF_COLOR;
+        -fx-opacity: 1;
+        -fx-background-color: -fx-text-color;
+    }
+
+
+.message-container:hover {
+    -fx-background-color: transparent;
+    visibility: hidden;
+    -fx-font-weight: normal;
+}
+
+.message-container Text {
+    -fx-fill: -fx-text-color;
+    -fx-font-size: 10px;
+    -fx-font-weight: normal;
+}
+
+.message-container .time {
+    -fx-text-fill: -fx-mid-text-color;
+    -fx-font-size: 10px;
+    -fx-font-weight: normal;
+}
+
+.message-container .author {
+    -fx-text-fill: -fx-text-color;
+    -fx-font-size: 10px;
+    -fx-font-weight: normal;
+}
+
+.discord-icon-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-font-weight: normal;
+    -fx-border-color: -fx-accent;
+    -fx-border-width: 1 0;
+    -fx-background-color: rgba(240, 245, 250, 1);
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: -fx-text-color;
+}
+.table-view .table-cell {
+    -fx-padding:0 10 0 0;
+    -fx-text-fill: -fx-text-color;
+}
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0.0em;
+    -fx-border-collapse: collapse;
+    -fx-border-width: 1;
+    -fx-border-color: transparent;
+}
+
+    .table-row-cell:selected {
+        -fx-background-color: rgba(240, 245, 250, 0.7);
+        -fx-border-radius: 2;
+        -fx-border-width: 1;
+        -fx-border-color: -fx-accent2;
+    }
+
+#modsPane {
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+    -fx-background-radius: 4;
+}
+
+#teamsPane {
+    -fx-background-color: rgba(240, 245, 250, 0.7);
+    -fx-background-radius: 4;
+}
+.scroll-bar {
+    -fx-background-color: -fx-accent2;
+}
+.map-preview {
+    -fx-border-width: 5;
+    -fx-border-color: -fx-accent2;
+}
