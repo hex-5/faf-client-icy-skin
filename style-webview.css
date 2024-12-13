@@ -1,0 +1,58 @@
+/*****************
+
+All the following applies to the content of a WebViews (chat, news), therefore it's default CSS.
+
+*****************/
+@font-face {
+    src: url("../font/SourceSansPro-Light.ttf"),
+}
+
+html, body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    /* Use same as -fx-light-text-color */
+    color: rgba(50, 60, 70, 1.00);
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+}
+
+a {
+  /* Use same as -fx-accent */
+  color: #2b71d9;
+  text-decoration: none;
+}
+
+/***************** Search (WebView) *****************/
+.highlight {
+  background-color: rgba(255, 255, 0, 0.7);
+  color: black;
+  border-radius: 3px;
+}
+
+/***************** News (WebView) *****************/
+
+html.news-detail {
+  padding: 20px;
+}
+
+.news-detail img {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+/***************** Tournaments (WebView) *****************/
+
+html.tournament {
+  padding: 20px;
+}
+
+.tournament th {
+  text-align: left;
+}
+
+.tournament img {
+  background: rgba(255, 255, 255, .1);
+}
+

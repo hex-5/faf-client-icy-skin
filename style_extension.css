@@ -642,20 +642,20 @@ https://whvn.cc/01r3x3
 
 .message-container Text {
     -fx-fill: -fx-text-color;
-    -fx-font-size: 10px;
+    -fx-font-size: 14px;
     -fx-font-weight: normal;
 }
 
 .message-container .time {
     -fx-text-fill: -fx-mid-text-color;
-    -fx-font-size: 10px;
+    -fx-font-size: 12px;
     -fx-font-weight: normal;
 }
 
 .message-container .author {
     -fx-text-fill: -fx-text-color;
-    -fx-font-size: 10px;
-    -fx-font-weight: normal;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
 }
 
 .discord-icon-background {
@@ -707,3 +707,8 @@ https://whvn.cc/01r3x3
     -fx-border-width: 5;
     -fx-border-color: -fx-accent2;
 }
+
+/*#descriptionWebView {
+    -fx-text-fill: -fx-text-color;
+    -fx-font-scale: 5;
+}*/
